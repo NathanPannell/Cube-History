@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>Resume</title>
+    <link href="resume.css" type="text/css" rel="stylesheet">
+    <link href="images/logo-alt.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="loader"></div>
+
+    <nav id="nav">
+        <a href="home.html">
+            <img id="logo" src="images/logo-alt.png">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="single-timeline.html">Single WR</a></li>
+                <li><a href="average-timeline.html">Average WR</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="resume">
+        <div id="top-left" class="quarter">
+            <div>
+                <h1>Nathan Pannell</h1>
+                <ul>
+                    <li>npannell@uvic.ca</li>
+                    <li>604-202-2018</li>
+                    <li>53302-D UVic Cluster Neighbourhood</li>
+                </ul>
+                <div class="icons">
+                    <a href="https://facebook.com">
+                        <i class="fa fa-facebook-square"></i>
+                    </a><a href="https://twitter.com">
+                        <i class="fa fa-twitter-square"></i>
+                    </a><a href="https://instagram.com">
+                        <i class="fa fa-instagram"></i>
+                    </a><a href="https://linkedin.com">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="quarter" id="top-right">
+            <div>
+                <h1>Professional Summary</h1>
+                <p>Second year Computer Science student at the University of Victoria. Experience with account, process
+                    streamlining, and various programming languages. A fast learner and excited to work with you!</p>
+            </div>
+        </div>
+        <div class="quarter" id="bot-left">
+            <div>
+                <h1>Technical Skills</h1>
+                <ul>
+                    <li>
+                        <p>Excel</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </li>
+                    <li>
+                        <p>Python</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </li>
+                    <li>
+                        <p>Java</p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </li>
+                </ul>
+
+                <h2>Education</h2>
+                <h3>University of Victoria <br>
+                    (2021-Present) <br>
+                    <i>Victoria, B.C., Canada</i>
+                </h3>
+                <h4>BSc. Computer Science <br>
+                    Second Year</h4>
+            </div>
+        </div>
+        <div class="quarter" id="bot-right">
+            <div>
+                <h1>Experience</h1>
+                <h2>AMJ Campbell - Accounting Clerk</h2>
+                <ul>
+                    <li>Designed streamlined processes to reduce errors and save time</li>
+                    <li>Prepared and calculated payroll</li>
+                    <li>Created VBA scripts to automate routine tasks</li>
+                </ul>
+                <h2>UVic Environmental Engineering Club - Software Team</h2>
+                <ul>
+                    <li>Designed and created club website <a href="https://www.uveec.ca">uveec.ca</a></li>
+                    <li>Handled states of autonomous driving using python</li>
+                </ul>
+                <h2>Niagara Fall Restaurant - Server</h2>
+                <ul>
+                    <li>Managed orders in a fast-paced work enviroment</li>
+                    <li>Communicated with customers over the phone and in person</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--    JavaScript for Menu Toggle  -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="loader.js"></script>
+</body>
+
+</html>

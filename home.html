@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <title>Cube History</title>
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <link href="images/logo.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="loader"></div>
+
+    <nav>
+        <a href="home.html">
+            <img id="logo" src="images/logo.png">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="single-timeline.html">Single WR</a></li>
+                <li><a href="average-timeline.html">Average WR</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="content">
+        <h1 class="title">Welcome to Cube History!</h1>
+
+        <div class="splash">
+            <div class="element">
+                <h2>The Magic Cube</h2>
+                <p>Invented by Erno Rubik in 1974, the 3x3 Rubik's cube has become a pop culture icon and the best
+                    selling toy of all time.
+                    Using it's 6 rotating sides and 26 cublets, the Rubik's cube has a staggering
+                    43,252,003,274,489,856,000 possible permutations.
+                    However, no matter how scrambled the cube may be, it is at most 20 moves from being solved!
+                    This value (<a
+                        href="https://ruwix.com/the-rubiks-cube/gods-number/#:~:text=God%27s%20Number%2C%20as%20many%20cube,fairly%20recent%20(July%202010).">God's
+                        Number</a>) was calculated by Tomas Rokicki and his team at Google in 2010.
+                </p>
+            </div>
+            <img src="images/home-splash.png">
+            <div class="element">
+                <h2>History of Competition</h2>
+                <p>Formed in August 2004, the World Cubing Association (<a
+                        href="https://www.worldcubeassociation.org">WCA</a>) is a worldwide nonprofit organization that
+                    governs competitions for all manner of 'twisty puzzles'.
+                    The flagship and most competitive event at all cubing competitions is the 3x3 Rubik's Cube.
+                    The WCA recognizes both single solve and average world records for the 3x3.
+                    This website has two timelines showing the history both records with videos of the record-breaking
+                    solves.
+                </p>
+            </div>
+        </div>
+
+        <div class="display">
+            <div class="element">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SB3ut65SFUU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <a href="https://www.worldcubeassociation.org/results/records">
+                    <h1>World Record Single</h1>
+                </a>
+                <h2>3.47 seconds by Yusheng Du</h2>
+                <h2>November 24, 2018</h2>
+            </div>
+
+            <div class="element">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/s3ypNkatnwg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <a href="https://www.worldcubeassociation.org/results/records">
+                    <h1>World Record Average</h1>
+                </a>
+                <h2>4.86 seconds by Max Park</h2>
+                <h2>September 24, 2022</h2>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <h2>Contact</h2>
+                <a href="https://www.instagram.com/toomanynathans/?hl=en" target="_blank">
+                    <img src=images/instagram.webp>
+                </a>
+                <a href="https://www.linkedin.com/in/nathan-pannell-38082b234/" target="_blank">
+                    <img src="images/linkedin.png">
+                </a>
+                <a href="https://github.com/NathanPannell" target="_blank">
+                    <img id="github" src="images/github.png">
+                </a>
+                <a href="mailto:npannell@uvic.ca" target="_blank">
+                    <img src="images/outlook.gif">
+                </a>
+            </div>
+            <div>
+                <h2>Rubik's Cube Community</h2>
+                <a href="https://www.worldcubeassociation.org" target="_blank">
+                    <img src="images/wca.gif">
+                </a>
+                <a href="https://www.reddit.com/r/cubing" target="_blank">
+                    <img src="images/reddit.gif">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="loader.js"></script>
+    <!--    JavaScript for Menu Toggle  -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
